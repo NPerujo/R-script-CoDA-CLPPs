@@ -1,0 +1,10 @@
+install.packages(
+  c("zCompositions",
+    "StatDA",
+    "candisc",
+    "readxl",
+    "rJava",
+    "psych",
+    "magrittr"
+    )
+)
