@@ -1,6 +1,6 @@
 #Community Level Physiological Profiles (CLPPs) using Compositional data Analysis (CoDA)
 
-#it is necessary to carry on the script "install_packages.R" and the script "functions.R"
+#Load the script "install_packages.R" 
 
 
 # libraries----
@@ -12,21 +12,22 @@ library(readxl)
 library(rJava)
 library(psych)
 library(magrittr)
+library(car)
 
+# Load the script "functions.R"
 
 ###### PREPARING THE DATA SET ----
 
 #Load data
 
-datased24 <- read_excel("sediment_biologTordera_zerosextres_substrats_hores.xlsx", 
-                                                               sheet = "24h_sediment")
-datased96 <- read_excel("sediment_biologTordera_zerosextres_substrats_hores.xlsx", 
+datased24 <- read_excel("raw_data.xlsx", sheet = "24h_sediment")
+datased96 <- read_excel("raw_data.xlsx", 
                         sheet = "96h_sediment")
-datased120 <- read_excel("sediment_biologTordera_zerosextres_substrats_hores.xlsx", 
+datased120 <- read_excel("raw_data.xlsx", 
                         sheet = "120h_sediment")
-datased144 <- read_excel("sediment_biologTordera_zerosextres_substrats_hores.xlsx",  
+datased144 <- read_excel("raw_data.xlsx",  
                         sheet = "144h_sediment")
-datased168 <- read_excel("sediment_biologTordera_zerosextres_substrats_hores.xlsx",  
+datased168 <- read_excel("raw_data.xlsx",  
                         sheet = "168h_sediment")
 
 #Organize data
