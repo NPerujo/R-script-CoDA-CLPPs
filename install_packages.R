@@ -1,0 +1,9 @@
+install.packages(
+  c("zCompositions",
+    "candisc",
+    "readxl",
+    "psych",
+    "magrittr",
+    "car"
+    )
+)
